@@ -6,7 +6,9 @@ plugins {
 android {
     namespace = "com.example.phone_test"
     compileSdk = 34
-
+    buildFeatures {
+        dataBinding = true
+    }
     defaultConfig {
         applicationId = "com.example.phone_test"
         minSdk = 24

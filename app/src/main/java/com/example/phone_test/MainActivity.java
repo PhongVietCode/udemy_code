@@ -21,6 +21,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.phone_test.Usage.Person;
 import com.example.phone_test.adapter.ContactAdapter;
 import com.example.phone_test.db.ContactDAO;
 import com.example.phone_test.db.ContactDatabase;
@@ -59,6 +60,15 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setTitle("My contact");
+
+        // Data binding
+        TextView namePerson = findViewById(R.id.personName);
+        TextView emailPerson = findViewById(R.id.personEmail);
+
+        Person person1 = new Person("Jack","jack5@gmail.com");
+
+        namePerson.setText(person1.getName());
+        emailPerson.setText(person1.getEmai());
         // - - RecyclerView
         recyclerView = findViewById(R.id.contactList);
 
