@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Navigation.fragments.PlayFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pngtree_simple_background_of_multiple_color_gradient_app_interface_materials_png_image_392301"
+            android:gravity="center"
+            android:text="this is our playing zone"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+</layout>

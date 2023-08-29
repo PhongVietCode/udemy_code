@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabLucky"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabWorldCup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/fabLucky"
+        app:layout_constraintStart_toEndOf="@+id/fabLucky"
+        app:layout_constraintTop_toTopOf="@+id/fabLucky"
+        app:srcCompat="@android:drawable/btn_radio"
+        android:layout_margin="20dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabVaccine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/fabWorldCup"
+        app:layout_constraintStart_toEndOf="@+id/fabWorldCup"
+        app:layout_constraintTop_toTopOf="@+id/fabWorldCup"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fabVaccine"
+        app:layout_constraintStart_toEndOf="@+id/fabVaccine"
+        app:layout_constraintTop_toTopOf="@+id/fabVaccine"
+        app:srcCompat="?attr/actionModePasteDrawable" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/fabLucky"
+        app:layout_constraintStart_toStartOf="@+id/fabLucky"
+        app:layout_constraintTop_toBottomOf="@+id/fabLucky"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/fabNav"
+        app:layout_constraintStart_toEndOf="@+id/fabNav"
+        app:layout_constraintTop_toTopOf="@+id/fabNav"
+        app:srcCompat="@android:drawable/ic_menu_compass" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/fabFragment"
+        app:layout_constraintStart_toEndOf="@+id/fabFragment"
+        app:layout_constraintTop_toTopOf="@+id/fabFragment"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/fabPager"
+        app:layout_constraintStart_toEndOf="@+id/fabPager"
+        app:layout_constraintTop_toTopOf="@+id/fabPager"
+        app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNavi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/fabContact"
+        app:layout_constraintStart_toEndOf="@+id/fabContact"
+        app:layout_constraintTop_toTopOf="@+id/fabContact"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabRoutine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/fabNavi"
+        app:layout_constraintStart_toEndOf="@+id/fabNavi"
+        app:layout_constraintTop_toTopOf="@+id/fabNavi"
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabRetrofit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+
+        app:layout_constraintEnd_toEndOf="@+id/fabNav"
+        app:layout_constraintStart_toStartOf="@+id/fabNav"
+        app:layout_constraintTop_toBottomOf="@+id/fabNav"
+        app:srcCompat="@drawable/social_leaderboard_48px"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabFirebase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/fabRetrofit"
+        app:layout_constraintStart_toEndOf="@+id/fabRetrofit"
+        app:layout_constraintTop_toTopOf="@+id/fabRetrofit"
+        app:srcCompat="@drawable/local_fire_department_48px"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

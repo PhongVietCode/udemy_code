@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Firebase.Fragment.RealtimeDatabaseFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Sold"
+        app:layout_constraintEnd_toEndOf="@+id/edCarprice"
+        app:layout_constraintStart_toStartOf="@+id/edCarprice"
+        app:layout_constraintTop_toBottomOf="@+id/edCarprice" />
+
+    <EditText
+        android:id="@+id/edCarname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edCarType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Type"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edCarname"
+        app:layout_constraintStart_toStartOf="@+id/edCarname"
+        app:layout_constraintTop_toBottomOf="@+id/edCarname" />
+
+    <EditText
+        android:id="@+id/edCarprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edCarType"
+        app:layout_constraintStart_toStartOf="@+id/edCarType"
+        app:layout_constraintTop_toBottomOf="@+id/edCarType" />
+
+    <TextView
+        android:id="@+id/listCartext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPost" />
+</androidx.constraintlayout.widget.ConstraintLayout>

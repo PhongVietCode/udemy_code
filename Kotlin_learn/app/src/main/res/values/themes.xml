@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Kotlin_learn" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:titleTextColor">@color/white</item>
+    </style>
+
+    <style name="Theme.Kotlin_learn" parent="Base.Theme.Kotlin_learn" />
+
+    <style name="Navi_Theme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:titleTextColor">@color/white</item>
+
+    </style>
+</resources>
